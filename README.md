@@ -1,14 +1,14 @@
-# A geometric interpretation of Vieta jumping
-
-### IMO 1988 · Problem 6
+# IMO 1988 Problem 6: a rectangle interpretation of Vieta jumping
 
 **The jump is a leftover width.** Place copies of a rectangle side by side, remove a square, and repeat with the smaller pair of lengths. The familiar substitution $b\mapsto ka-b$ becomes something you can see.
 
-By **Pranay Manocha** · [Typeset note](proof.pdf) · [LaTeX source](proof.tex)
+By **Pranay Manocha**, independent researcher · September 2026
+
+[Paper (PDF)](proof.pdf) · [LaTeX source](proof.tex)
+
+This expository note gives a rectangle-area interpretation of the classical Vieta-jumping proof. The complete argument is below, including why the square fits, why the new lengths remain integers, and why the construction must end. The descent and its greatest-common-divisor consequence are established results; [earlier treatments and related work](#relation-to-vieta-jumping-and-earlier-work) are credited below. Historical priority for this presentation is not claimed.
 
 ![Four copies of an 8 by 30 rectangle form a strip of width 32. Removing a 30 by 30 square leaves a rectangle of width 2: the Vieta jump.](figures/construction.svg)
-
-This is a visual interpretation of the classical Vieta-jumping proof. The complete argument is below, including why the square fits, why the new lengths remain integers, and why the construction must end. [Earlier treatments and related work](#relation-to-vieta-jumping-and-earlier-work) are credited below; no claim of priority is made.
 
 ## The problem
 
@@ -180,30 +180,55 @@ The arithmetic mechanism is therefore the standard descent. Earlier geometric in
 
 1. **International Mathematical Olympiad.** [1988 problems, English](https://www.imo-official.org/assets/documents/problems/1988/1988_eng.pdf), Problem 6. The original problem statement.
 2. **John Campbell.** [“A Solution to 1988 IMO Question 6”](https://www.wfnmc.org/mc19882campbell.pdf), *Mathematics Competitions* **1**(2), 1988, pp. 29–32. An early descent proof, including the greatest-common-divisor conclusion.
-3. **Kyle Wu.** [“Vieta jumping: visualization and intuition”](https://www.parabola.unsw.edu.au/sites/default/files/2024-05/vol60_no1_8.pdf), *Parabola* **60**(1), 2024. Visualizes the descent using lattice points on a hyperbola. The numerical orbit with $k=4$ used here also appears there.
-4. **Rutger Moody and contributors.** [“Math Olympiad 1988 problem 6, canonical solution 2 without Vieta jumping”](https://math.stackexchange.com/questions/1906908/math-olympiad-1988-problem-6-canonical-solution-2-without-vieta-jumping), *Mathematics Stack Exchange*, 2016. A related discussion of a remainder-style descent and a separate geometric attempt; cited as discussion, not as a proof on which this note depends.
+3. **Kyle Wu.** [“Vieta jumping: visualization and intuition”](https://www.parabola.unsw.edu.au/sites/default/files/2024-05/vol60_no1_8.pdf), *Parabola* **60**(1), 2024, article PDF pp. 1–7. Visualizes the descent using lattice points on a hyperbola. The numerical orbit with $k=4$ used here also appears there.
+4. **Rutger Moody and contributors.** [“Math Olympiad 1988 problem 6, canonical solution 2 without Vieta jumping”](https://math.stackexchange.com/questions/1906908/math-olympiad-1988-problem-6-canonical-solution-2-without-vieta-jumping), *Mathematics Stack Exchange*, 29 August 2016. A related discussion of a remainder-style descent and a separate geometric attempt; cited as discussion, not as a proof on which this note depends.
 
 ## Files and rebuilding
 
-The README is the complete visual exposition. [`proof.pdf`](proof.pdf) is the typeset mathematical note, built from [`proof.tex`](proof.tex). The SVGs in [`figures/`](figures/) are the diagram sources; their matching PDF exports are used by LaTeX, so both versions share the same artwork.
+The README is the complete visual exposition. [`proof.pdf`](proof.pdf) is a self-contained mathematical article with an abstract, numbered theorem and lemma, proofs, figures, a worked example, and references, built from [`proof.tex`](proof.tex). The article uses two of the four diagrams; the additional diagrams remain in this README. The SVGs in [`figures/`](figures/) are the diagram sources; their matching PDF exports are used by LaTeX, so both versions share the same artwork.
 
-To rebuild the diagrams and PDF, install Python 3, [CairoSVG](https://cairosvg.org/), and [Tectonic](https://tectonic-typesetting.github.io/). Then run:
+### Build the paper
 
-```sh
-python3 -m venv .venv
-. .venv/bin/activate
-python -m pip install -r requirements.txt
-make
-```
-
-CairoSVG also needs the system Cairo library; see its installation instructions for your platform. On macOS with Homebrew, `brew install cairo` supplies it. If the library is not found, use `make CAIRO_LIB_DIR="$(brew --prefix)/lib"`.
-
-Alternatively, after `make figures`, compile `proof.tex` with a standard LaTeX installation:
+The vector figures are included, so you can rebuild the paper with a standard LaTeX installation without regenerating the artwork:
 
 ```sh
 latexmk -pdf proof.tex
 ```
 
-`make check` independently checks the displayed examples and exhaustively checks all admissible pairs with $1\le a\le b\le400$. These finite checks are a safeguard against transcription errors; the general proof is above.
+Alternatively, run `pdflatex proof.tex` twice to resolve citations and cross-references. These commands also work with MiKTeX on Windows.
 
-The material is currently a private draft. See [`LICENSE`](LICENSE) for its present rights status.
+### Regenerate the diagrams
+
+To regenerate the SVGs and their PDF exports, install Python 3 and [CairoSVG](https://cairosvg.org/):
+
+```sh
+python -m pip install -r requirements.txt
+python scripts/make_figures.py
+python scripts/export_figures.py
+```
+
+CairoSVG also needs the system Cairo library; see its installation instructions for your platform. On macOS with Homebrew, `brew install cairo` supplies it.
+
+The included Makefile runs diagram generation and builds the paper using [Tectonic](https://tectonic-typesetting.github.io/):
+
+```sh
+make
+```
+
+If Cairo is not found on macOS, use `make CAIRO_LIB_DIR="$(brew --prefix)/lib"`.
+
+### Check the arithmetic
+
+The checks use only the Python standard library:
+
+```sh
+python scripts/check_math.py
+```
+
+This checks the displayed examples and exhaustively checks all admissible pairs with $1\le a\le b\le400$. These finite checks are a safeguard against transcription errors; the general proof is above. `make check` runs the same script.
+
+## Author and scope
+
+This is an expository note about an established result. The rectangle construction presents the standard descent; it is not a claim of a new theorem or the first geometric solution. The author is an independent researcher, with no institutional affiliation.
+
+Copyright remains with the author. No public reuse license has been granted; see [`LICENSE`](LICENSE).

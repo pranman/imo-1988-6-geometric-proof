@@ -10,3 +10,4 @@ tmp/
 *.fls
 *.fdb_latexmk
 *.xdv
+/output/
