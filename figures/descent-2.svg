@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+<title id="title">An entire descent with fixed quotient four</title>
+<desc id="desc">The chain (30,112), (8,30), (2,8), (0,2). Each arrow replaces (a,b) by (4a-b,a). The larger side strictly decreases: 112,30,8,2. The zero in the final pair is a boundary endpoint, and the invariant there states 0 squared plus 2 squared equals 4 times (0 times 2 plus 1). This is a symbolic flow diagram; boxes are not geometric lengths.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#167d8d"/></marker></defs>
+<rect x="0" y="0" width="1100" height="430" rx="16" fill="#faf9f6" stroke="none" stroke-width="1"/>
+<text x="42" y="48" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#173c42" font-weight="bold" text-anchor="start">The same move repeats — until one side is zero</text>
+<text x="42" y="80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#567075" font-weight="normal" text-anchor="start">A complete descent for k = 4.  This is a symbolic chain, not a length-scale diagram.</text>
+<rect x="40" y="138" width="219" height="178" rx="12" fill="#fffefb" stroke="#d6dfdc" stroke-width="1.5"/>
+<rect x="58" y="157" width="6" height="28" rx="3" fill="#167d8d" stroke="none" stroke-width="1"/>
+<text x="149.5" y="201" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#173c42" font-weight="bold" text-anchor="middle">(30, 112)</text>
+<text x="149.5" y="239" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#567075" font-weight="normal" text-anchor="middle">larger side: 112</text>
+<line x1="62" y1="260" x2="237" y2="260" stroke="#d6dfdc" stroke-width="1"/>
+<text x="149.5" y="292" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#167d8d" font-weight="bold" text-anchor="middle">4 · 30 − 112 = 8</text>
+<rect x="307" y="138" width="219" height="178" rx="12" fill="#fffefb" stroke="#d6dfdc" stroke-width="1.5"/>
+<rect x="325" y="157" width="6" height="28" rx="3" fill="#167d8d" stroke="none" stroke-width="1"/>
+<text x="416.5" y="201" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#173c42" font-weight="bold" text-anchor="middle">(8, 30)</text>
+<text x="416.5" y="239" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#567075" font-weight="normal" text-anchor="middle">larger side: 30</text>
+<line x1="329" y1="260" x2="504" y2="260" stroke="#d6dfdc" stroke-width="1"/>
+<text x="416.5" y="292" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#167d8d" font-weight="bold" text-anchor="middle">4 · 8 − 30 = 2</text>
+<rect x="574" y="138" width="219" height="178" rx="12" fill="#fffefb" stroke="#d6dfdc" stroke-width="1.5"/>
+<rect x="592" y="157" width="6" height="28" rx="3" fill="#167d8d" stroke="none" stroke-width="1"/>
+<text x="683.5" y="201" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#173c42" font-weight="bold" text-anchor="middle">(2, 8)</text>
+<text x="683.5" y="239" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#567075" font-weight="normal" text-anchor="middle">larger side: 8</text>
+<line x1="596" y1="260" x2="771" y2="260" stroke="#d6dfdc" stroke-width="1"/>
+<text x="683.5" y="292" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#167d8d" font-weight="bold" text-anchor="middle">4 · 2 − 8 = 0</text>
+<rect x="841" y="138" width="219" height="178" rx="12" fill="#fffefb" stroke="#d69b36" stroke-width="1.5"/>
+<rect x="859" y="157" width="6" height="28" rx="3" fill="#d69b36" stroke="none" stroke-width="1"/>
+<text x="950.5" y="201" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#173c42" font-weight="bold" text-anchor="middle">(0, 2)</text>
+<text x="950.5" y="239" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#567075" font-weight="normal" text-anchor="middle">boundary endpoint</text>
+<line x1="863" y1="260" x2="1038" y2="260" stroke="#d6dfdc" stroke-width="1"/>
+<text x="950.5" y="292" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#173c42" font-weight="bold" text-anchor="middle">k = 2² = 4</text>
+<line x1="268" y1="213" x2="298" y2="213" stroke="#167d8d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="535" y1="213" x2="565" y2="213" stroke="#167d8d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="802" y1="213" x2="832" y2="213" stroke="#167d8d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="550" y="371" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#173c42" font-weight="bold" text-anchor="middle">112  &gt;  30  &gt;  8  &gt;  2</text>
+<text x="550" y="404" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#567075" font-weight="normal" text-anchor="middle">A strictly decreasing sequence of nonnegative integer sides cannot continue forever.</text>
+</svg>

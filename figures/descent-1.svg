@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
+<title id="title">First jump from (30,112) to (8,30)</title>
+<desc id="desc">Four 30-by-112 rectangles make a 120-by-112 strip. After removing the 112-square, its 8-by-112 remainder determines c=8. Re-pairing c with a=30 gives the new pair (8,30), whose quotient remains 4. The original strip and the new 8-by-30 rectangle are drawn at different explicitly stated scales; this is a re-pairing of lengths, not a physical reshaping.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#167d8d"/></marker></defs>
+<rect x="0" y="0" width="1100" height="560" rx="16" fill="#faf9f6" stroke="none" stroke-width="1"/>
+<text x="42" y="48" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#173c42" font-weight="bold" text-anchor="start">Keep the new side; pair it with the old smaller side</text>
+<text x="42" y="80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#567075" font-weight="normal" text-anchor="start">First jump: (a, b) = (30, 112) becomes (c, a) = (8, 30), with k = 4.</text>
+<text x="54" y="125" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#167d8d" font-weight="bold" text-anchor="start">1. FIND c IN THE STRIP</text>
+<rect x="90" y="178" width="264" height="246.4" rx="0" fill="#e6f1f0" stroke="none" stroke-width="1"/>
+<rect x="336.4" y="178" width="17.6" height="246.4" rx="0" fill="#f4dfb9" stroke="none" stroke-width="1"/>
+<line x1="156" y1="178" x2="156" y2="424.4" stroke="#167d8d" stroke-width="1.3" stroke-dasharray="5 5"/>
+<line x1="222" y1="178" x2="222" y2="424.4" stroke="#167d8d" stroke-width="1.3" stroke-dasharray="5 5"/>
+<line x1="288" y1="178" x2="288" y2="424.4" stroke="#167d8d" stroke-width="1.3" stroke-dasharray="5 5"/>
+<rect x="90" y="178" width="264" height="246.4" rx="0" fill="none" stroke="#167d8d" stroke-width="2"/>
+<rect x="90" y="178" width="246.4" height="246.4" rx="0" fill="none" stroke="#173c42" stroke-width="2.5"/>
+<line x1="90" y1="156" x2="354" y2="156" stroke="#173c42" stroke-width="1.25"/>
+<line x1="90" y1="151" x2="90" y2="161" stroke="#173c42" stroke-width="1.25"/>
+<line x1="354" y1="151" x2="354" y2="161" stroke="#173c42" stroke-width="1.25"/>
+<text x="222" y="146" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#173c42" font-weight="normal" text-anchor="middle">ka = 120</text>
+<text x="213.2" y="293" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#173c42" font-weight="bold" text-anchor="middle">112²</text>
+<text x="213.2" y="323" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#567075" font-weight="normal" text-anchor="middle">removed square</text>
+<line x1="90" y1="450" x2="336.4" y2="450" stroke="#173c42" stroke-width="1.25"/>
+<line x1="90" y1="445" x2="90" y2="455" stroke="#173c42" stroke-width="1.25"/>
+<line x1="336.4" y1="445" x2="336.4" y2="455" stroke="#173c42" stroke-width="1.25"/>
+<text x="213.2" y="476" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#173c42" font-weight="normal" text-anchor="middle">b = 112</text>
+<line x1="345" y1="424.4" x2="389" y2="451" stroke="#d69b36" stroke-width="2"/>
+<text x="399" y="462" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#173c42" font-weight="bold" text-anchor="start">c = 8</text>
+<text x="54" y="519" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#567075" font-weight="normal" text-anchor="start">Remainder: 112 · 8 = 30² − 4.</text>
+<line x1="441" y1="279" x2="577" y2="279" stroke="#167d8d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="509" y="244" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#173c42" font-weight="normal" text-anchor="middle">c = 4a − b</text>
+<text x="509" y="316" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#567075" font-weight="normal" text-anchor="middle">use (c, a)</text>
+<text x="624" y="125" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#167d8d" font-weight="bold" text-anchor="start">2. FORM THE NEXT PAIR</text>
+<rect x="642" y="180" width="64" height="240" rx="0" fill="#e6f1f0" stroke="#167d8d" stroke-width="2"/>
+<line x1="642" y1="154" x2="706" y2="154" stroke="#173c42" stroke-width="1.25"/>
+<line x1="642" y1="149" x2="642" y2="159" stroke="#173c42" stroke-width="1.25"/>
+<line x1="706" y1="149" x2="706" y2="159" stroke="#173c42" stroke-width="1.25"/>
+<text x="674" y="144" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#173c42" font-weight="normal" text-anchor="middle">8</text>
+<line x1="724" y1="180" x2="724" y2="420" stroke="#567075" stroke-width="1.25"/>
+<line x1="719" y1="180" x2="729" y2="180" stroke="#567075" stroke-width="1.25"/>
+<line x1="719" y1="420" x2="729" y2="420" stroke="#567075" stroke-width="1.25"/>
+<text x="738" y="307" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#567075" font-weight="normal" text-anchor="start">30</text>
+<text x="805" y="219" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#173c42" font-weight="bold" text-anchor="start">(8, 30)</text>
+<text x="805" y="267" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#567075" font-weight="normal" text-anchor="start">Same quotient:</text>
+<text x="805" y="305" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#173c42" font-weight="normal" text-anchor="start">8² + 30² = 964</text>
+<line x1="805" y1="319" x2="1045" y2="319" stroke="#d6dfdc" stroke-width="1.5"/>
+<text x="805" y="352" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#173c42" font-weight="normal" text-anchor="start">8 · 30 + 1 = 241</text>
+<text x="805" y="400" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#167d8d" font-weight="bold" text-anchor="start">964 / 241 = 4</text>
+<text x="624" y="473" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#173c42" font-weight="bold" text-anchor="start">The new larger side is 30 &lt; 112.</text>
+<text x="624" y="519" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#567075" font-weight="normal" text-anchor="start">Panels use different scales; all side ratios are exact.</text>
+</svg>
